@@ -301,7 +301,7 @@ img {
   position:relative;
   display:block;
   margin-bottom:100px;
-  width:40%;
+  width:100%;
   background:#eee;
   height:22px;
   border-radius:3px;
@@ -320,15 +320,13 @@ img {
   }
 
   #page-wrapper{
-    position: relative;
+    position: absolute;
     z-index: 2;
     background-color: #fff;
     width: 66%;
     margin-left: 17%;
     margin-top: 1000px;
     min-height: 2300px;
-    border-left: 1px solid #333;
-    border-right: 1px solid #333;
   }
 
 	.knob_box{
@@ -387,6 +385,15 @@ a.button-slide{
 }
 
 @media screen and (min-width:751px) and (max-width:1279px) {
+	#page-wrapper{
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    width: 66%;
+    margin-left: 17%;
+    margin-top: 1000px;
+    min-height: 2300px;
+  }
 
 .timeline_unit.left{
     float: left;
@@ -398,7 +405,7 @@ a.button-slide{
 .timeline_unit.right {
     float: right;
     margin-left: 13px;
-    margin-top: -415px;
+    /*margin-top: -415px;*/
     margin-right: 25px;
     margin-bottom: 25px;
   }
